@@ -199,7 +199,7 @@ workspace 8 output $L_monitor
 
 exec_always --no-startup-id ~/.screenlayout/monitor_setup.sh
 
-exec --no-startup-id setxkbmap -option caps:escap
+exec --no-startup-id setxkbmap -option caps:escape
 focus_follows_mouse no
 bindsym $mod+Shift+s exec --no-startup-id shotgun $(slop -f "-i %i -g %g") - | xclip -t image/png -selection clipboard
 # Switch to the next tab in the current container
